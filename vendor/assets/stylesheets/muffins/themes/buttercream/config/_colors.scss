@@ -1,0 +1,34 @@
+/**
+ * COLORS CONFIG
+ * -------------------------------------
+ */
+
+//special colors
+$color-brand-primary:             #f19fc1 !default; //beere
+$color-brand-secondary:           #FFF8DC !default; //vanille
+$color-info:                      #39b3d7 !default; //türkis
+$color-default:                   #ffffff !default; //weiß
+$color-success:                   #5cb85c !default; //grün
+$color-warning:                   #f0ad4e !default; //orange
+$color-danger:                    #ff0000 !default; //red
+$color-link:                      #428bca !default; //blau
+
+
+// default colors
+$color-transparent:                     rgba(255, 255, 255, 0) !default;
+$color-white:                           #fff !default;
+$color-black:                           #000 !default;
+$color-gray:                            #aaa !default;
+$gray-light:                            #cccccc !default;
+$color-gray-lighter:                    #dfdfdf !default;
+
+
+//background
+$color-background-main:                 $color-white !default;
+
+
+//quotes
+$color-block-quote:               $color-brand-primary !default;
+$color-mark:                      $color-brand-primary !default;
+
+//forms

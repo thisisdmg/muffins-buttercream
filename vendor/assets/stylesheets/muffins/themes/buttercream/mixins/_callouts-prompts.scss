@@ -1,0 +1,28 @@
+/** 
+ * Calouts and prompts mixins
+ */
+
+
+
+/*
+ * Alert boxes 
+ */ 
+
+@mixin generate-alert-box($background-color: $color-gray-lighter, $color: $color-black) {
+  background-color: $background-color;
+  padding: $padding-alert-box;
+  margin: $space 0;
+  border: 1px solid darken($background-color, 20%);
+  opacity: 0.6;
+  
+  p {    
+    color: $color;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+
+  @include border-radius($border-radius-alert-box);
+}

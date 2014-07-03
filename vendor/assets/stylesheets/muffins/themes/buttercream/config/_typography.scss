@@ -1,0 +1,73 @@
+/**
+ * TYPOGRAPHY CONFIG
+ * -------------------------------------
+ */ 
+
+$font-stack:    Helvetica, sans-serif !default;
+
+
+/** 
+ * Headlines 
+ */
+
+//Formatting h1
+$font-size-h1:          48px !default;
+$line-height-h1:        52px !default;
+$font-color-h1:         darken($color-brand-primary, 30%) !default;
+
+
+//Formatting h2
+$font-size-h2:          42px !default;
+$line-height-h2:        48px !default;
+$font-color-h2:         darken($color-brand-primary, 10%) !default;
+
+
+//Formatting h3
+$font-size-h3:          36px !default;
+$line-height-h3:        42px !default;
+$font-color-h3:         $color-brand-primary !default;
+
+
+//Formatting h4
+$font-size-h4:          28px !default;
+$line-height-h4:        36px !default;
+$font-color-h4:         $color-brand-primary !default;
+
+//Formatting h5
+$font-size-h5:          24px !default;
+$line-height-h5:        28px !default;
+$font-color-h5:         $color-brand-primary !default;
+
+//Formatting h6
+$font-size-h6:          18px !default;
+$line-height-h6:        24px !default;
+$font-color-h6:         $color-brand-primary !default;
+
+
+/**
+ * Text
+ */
+
+//Formatting p
+$font-size-default:          18px !default;
+$line-height-default:        24px !default;
+$font-color-default:         $color-black !default;
+
+//Formmatin small text
+$font-size-small:           14px !default;
+$line-height-small:         16px !default;
+
+//Formmatin big text
+$font-size-big:             24px !default;
+$line-height-big:           26px !default;
+
+//formatting code text
+$font-size-code:            14px !default;
+$line-height-code:          18px !default;
+
+/**
+ * Links
+ */
+
+// Links
+$font-color-link:            $color-brand-primary !default;

@@ -1,0 +1,41 @@
+/**
+ * Muffins default theme
+ *
+ * The default theme for Muffins Sass Framewirk
+ *
+ * @package   muffins-default-theme
+ * @author    Stefanie Böhme
+ * @license   http://opensource.org/licenses/MIT MIT
+ * œlink
+ * @version   0.0.1
+ */
+
+// Import Compass Core
+@import "compass";
+
+// IMPORT CONFIG FILES
+@import "config/colors";
+@import "config/typography";
+@import "config/layout";
+@import "config/buttons";
+@import "config/code";
+@import "config/callouts-prompts";
+@import "config/forms";
+
+// IMPORT MIXINS FILES (THESE CONTAIN HELPER FUNCTIONS)
+@import "mixins/buttons";
+@import "mixins/typography";
+@import "mixins/callouts-prompts";
+
+// IMPORT PATTERNS DEFINITION FILES
+@import "patterns/layout";
+@import "patterns/code";
+@import "patterns/typography";
+@import "patterns/buttons";
+@import "patterns/lists";
+@import "patterns/navigation";
+@import "patterns/callouts-prompts";
+@import "patterns/forms";
+
+// IMPORT JS COMPONENTS STYLING
+

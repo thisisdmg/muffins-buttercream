@@ -1,0 +1,29 @@
+/**
+ * TYPOGRAPHY MIXIN 
+ * -------------------------------------
+ */
+
+
+/**
+ * Headlines
+ */
+@mixin generate-headlines($name, $color, $font-size, $line-height) {
+
+ #{$name} {
+    color: $color;
+    line-height: $line-height;
+    margin-bottom: ($space * 2);
+    font: {
+      size: $font-size;
+      weight: bold;
+    }
+
+    @include border-radius($border-radius-default);
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
