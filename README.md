@@ -12,12 +12,18 @@ Adds the [Buttercream](https://github.com/thisisdmg/buttercream "Buttercream") M
 
 Add this line to your application's Gemfile:
 
-    gem 'muffins-buttercream', github: 'thisisdmg/muffins-buttercream'
+```ruby
+gem 'muffins-buttercream', github: 'thisisdmg/muffins-buttercream'
+```
 
 execute:
 
-    $ bundle install
+```sh
+$ bundle install
+```
 
 and run:
 
-    $ bin/rails g muffins:buttercream:install
+```sh
+$ bin/rails g muffins:buttercream:install
+```
