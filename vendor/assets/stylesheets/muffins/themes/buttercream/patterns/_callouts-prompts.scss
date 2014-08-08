@@ -1,0 +1,22 @@
+/**
+ * Callouts and prompts patterns
+ */
+
+
+/** 
+ * Alert boxes
+ */
+
+.alert-box {
+  @include generate-alert-box();
+
+  &.danger {
+    @include generate-alert-box($color-danger, $color-white);
+  }
+  &.warning {
+    @include generate-alert-box($color-warning, $color-white);
+  }
+  &.success {
+    @include generate-alert-box($color-success, $color-white);
+  }
+}

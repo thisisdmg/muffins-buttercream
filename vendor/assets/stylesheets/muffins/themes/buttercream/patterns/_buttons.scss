@@ -1,0 +1,66 @@
+/**
+ * BUTTON PATTERNS
+ * -------------------------------------
+ */
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  outline: none;
+
+  @include box-shadow(none);
+  @include user-select(none);
+
+  @include button-variant($color-black, $color-default, darken($color-default, 20%));
+  @include button-size($space, $font-size-default, $line-height-default, $border-radius-button);
+
+  &.primary {
+
+    @include button-variant($color-white, $color-brand-primary, darken($color-brand-primary, 20%));
+  }
+
+  &.default {
+
+    @include button-variant($color-black, $color-default, darken($color-default, 20%));
+  }
+
+  &.success {
+
+    @include button-variant($color-white, $color-success, darken($color-success, 20%));
+  }
+
+  &.info {
+
+    @include button-variant($color-white, $color-info, darken($color-info, 20%));
+  }
+
+  &.warning {
+
+    @include button-variant($color-white, $color-warning, darken($color-warning, 20%));
+  }
+
+  &.danger {
+
+    @include button-variant($color-white, $color-danger, darken($color-danger, 20%));
+  }
+
+  &.link {
+
+    @include button-variant($color-link, $color-transparent, $color-transparent);
+  }
+
+  &.small { 
+
+    @include button-size(($space / 2), $font-size-small, $line-height-small, $border-radius-button);
+  }
+  &.big {
+
+    @include button-size(($space * 2), $font-size-big, $line-height-big, $border-radius-button);
+  }
+}
