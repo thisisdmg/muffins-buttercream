@@ -1,0 +1,179 @@
+
+$cherry:        #ff0033;
+
+.muffins {
+  position: relative;
+  height: 300px;
+
+  .paperbag {
+    position: absolute;
+    top: 100px; 
+
+    .paper-bottom, .paper-left, .paper-right {
+      background: white;
+      position: absolute;
+      width: 70px;
+
+      @include border-radius(46% 52% 44% 50%);
+
+    }
+    .paper-bottom {
+      height: 12px;
+      left: 60px;
+      top: 60px;
+
+      @include box-shadow(inset -1px -3px 2px 0px $cherry);
+    }
+
+    .paper-left, .paper-right {
+      height: 4px;
+      top: 30px;
+
+      @include box-shadow(inset -1px -3px 2px 0px $cherry);
+
+    }
+    .paper-left {
+      left: 16px;
+
+      @include transform(rotate(75deg));
+
+    }
+
+    .paper-right {
+      left: 104px;
+
+      @include transform(rotate(-75deg));
+
+
+    }
+  }
+
+  .topping {
+    .bubble {      
+      background: white;
+      position: absolute;
+      width: 23px;
+      height: 25px;
+
+
+      @include border-radius(26% 52% 44% 50%);
+
+      &.b1 {
+        left: 38px;
+        top: 75px;
+
+        @include box-shadow(inset -1px -3px 0px 0px $cherry);
+        @include transform(rotate(92deg));
+      }
+
+      &.b2 {        
+        left: 44px;
+        top: 56px;
+
+        @include box-shadow(inset -1px -2px 0px 0px $cherry);
+        @include transform(rotate(143deg));
+      }
+      
+      &.b3 {        
+        left: 125px;
+        top: 58px;
+
+        @include box-shadow(inset -1px -2px 0px 0px $cherry);
+        @include transform(rotate(-68deg));
+      }
+
+      &.b4 {       
+        height: 20px; 
+        left: 132px;
+        top: 81px;
+        width: 18px;
+
+        @include box-shadow(inset -2px -2px 0px 0px $cherry);
+        @include transform(rotate(-30deg));
+      }
+
+      &.b5 {       
+        height: 20px; 
+        left: 57px;
+        top: 41px;
+        width: 18px;
+
+        @include box-shadow(inset -2px -2px 0px 0px $cherry);
+        @include transform(rotate(177deg));
+      }
+
+      &.b6 {       
+        left: 111px;
+        top: 41px;
+
+        @include box-shadow(inset -1px -2px 0px 0px $cherry);
+        @include transform(rotate(-83deg));
+      }
+
+      &.b7 {       
+        left: 111px;
+        top: 41px;
+
+        @include box-shadow(inset -1px -2px 0px 0px $cherry);
+        @include transform(rotate(-83deg));
+      }
+
+      &.b8 {       
+        left: 73px;
+        top: 29px;
+
+        @include box-shadow(inset -1px -2px 0px 0px $cherry);
+        @include transform(rotate(186deg));
+      }
+    }
+  }
+
+  .cherry {
+    left: 91px;
+    position: absolute;
+    top: 17px;
+
+    .circle, .glow {
+      position: absolute;
+    }
+    .circle {
+      background-color: $cherry;
+      height: 30px;
+      width: 30px;
+
+      @include border-radius(15px);
+      @include box-shadow(inset -4px -4px 3px 0px darken($cherry, 10%));
+    }
+    .glow { 
+      height: 15px;
+      left: 4px;
+      top: 4px;
+      width: 13px;
+
+      @include box-shadow(inset -1px -2px 2px 0px white);
+      @include border-radius(46% 52% 44% 50%);
+      @include transform(rotate(156deg));
+    }
+
+    .stiel {
+      background-color: green;
+      height: 20px;
+      left: 22px;
+      position: absolute;
+      top: -14px;
+      width: 2px;
+
+      @include transform(rotate(-156deg));
+    }
+  }
+
+  .naming {
+    left: 105px;
+    position: absolute;
+    top: 82px;
+
+    .subline {
+      margin-left: 60px;
+    }
+  }
+}
