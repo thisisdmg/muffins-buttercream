@@ -1,0 +1,46 @@
+/**
+ * CODE PATTERNS
+ * -------------------------------------
+ */
+
+
+pre {
+  max-width: 100%;
+  padding: 0;
+}
+
+code { 
+  background-color: $background-code;
+  border: 1px solid darken($background-code, 10%);
+  display: block;
+  margin: 0;
+
+  @include border-radius($border-radius-code);
+
+  p & {
+    display: inline-block;
+    font-size: $font-size-code;
+    line-height: $line-height-code;
+    margin: 0 ($space / 2);
+    padding: ($space / 2) $space;
+  }
+
+  header {
+    background-color: lighten($background-code, 5%);
+    border-bottom: 1px solid darken($background-code, 10%);
+    font: {
+      weight: bold;
+      size: 110%;
+    }
+    text-transform: italic;
+  }
+
+  header, p {
+    font-size: $font-size-code;
+    line-height: $line-height-code;
+    overflow-x: auto;
+    padding:  $space;
+  }
+}
+
+

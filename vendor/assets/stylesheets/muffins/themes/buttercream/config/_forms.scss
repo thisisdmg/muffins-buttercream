@@ -1,0 +1,57 @@
+/**
+ * Forms Config
+ * ----------------------------------------------------
+ */
+
+/**
+* Fieldset
+*/
+$color-border-fieldset:             $color-brand-primary !default;
+$color-background-fieldset-legend:  $color-white !default;
+
+
+
+/**
+ * Labels
+ */
+$color-label:                      $color-black !default;
+
+$font-size-label:                  $font-size-default !default;
+$line-height-label:                $line-height-default !default;
+
+
+
+/**
+ * Textfields
+ */
+$color-form:                       $color-black !default;
+$color-form-placeholder:           $color-gray-lighter !default;
+$color-background-form:            $color-white !default;
+$color-border-form:                $color-gray !default;
+$color-background-form-focus:      lighten($color-brand-primary, 10%) !default;
+$color-border-form-focus:          $color-brand-primary !default;
+
+$box-shadow-form:                  inset 0 1px 2px rgba(0, 0, 0, 0.1) !default;
+
+$font-size-form:                   $font-size-default !default;
+$line-height-form:                 $line-height-default !default;
+
+
+
+/**
+ * Postfixes and Prefixes
+ */
+$color-background-postprefix:      $color-gray-lighter !default;
+$color-postprefix:                 $color-gray !default;
+$color-border-postprefix:          $color-gray !default;
+
+/**
+ * Select
+ */
+$color-select:                     $color-black !default;
+$color-background-select:          $color-gray-lighter !default;
+$color-border-select:              $color-gray !default;
+
+$font-size-select:                 $font-size-default !default;
+$line-height-select:               $line-height-default !default;
+

@@ -1,0 +1,39 @@
+/**
+ * Navigation patterns 
+ */
+
+
+/**
+ * Top Navigation
+ */
+nav.top-bar{
+
+  > ul {
+    display: block;
+    list-style-type: none;
+
+    > li {
+      display: inline-block;
+      font: {
+        font-family: $font-stack-menu;
+        weight: 700;
+      }
+      margin: 0 $space; 
+      text-transform: uppercase;
+      vertical-align: top;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+         &:after {
+          content: "";
+          display: table;
+        }
+      }
+    }    
+  }
+}

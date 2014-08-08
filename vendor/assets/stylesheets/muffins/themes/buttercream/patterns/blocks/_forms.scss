@@ -1,0 +1,176 @@
+/**
+ * FORM PATTERNS
+ * -------------------------------------------
+ */
+
+/**
+ * Placeholder for textfields
+ */
+ 
+%form {
+  background-color: $color-background-form;
+  border: 1px solid $color-border-form;
+  color: $color-form;
+  display: block;
+  font-size: $font-size-form;
+  line-height: $line-height-form;
+  margin-bottom: ($space * 2);
+  padding: $space;
+  width: 100%;
+
+  @include transition(box-shadow 0.45s, border-color 0.45s ease-in-out);
+  @include appearance(none);
+  @include box-shadow($box-shadow-form);
+
+  @include placeholder {
+      color: $color-form-placeholder;
+
+    }
+  &:focus {
+    background: $color-background-form-focus;
+    border-color: $color-border-form-focus;
+    outline: none;
+  }
+ 
+}
+
+
+/**
+ * Fieldset
+ */
+fieldset {
+  border: 1px solid $color-border-fieldset;
+  margin: ($space * 2) 0;
+  padding: ($space * 2);
+
+  legend {
+    background: $color-background-fieldset-legend;
+    font-weight: bold;
+    margin: 0;
+    margin-left: ($space * -1);
+    padding: 0 $space;
+  }
+}
+
+
+/**
+ * Textfields
+ */
+input {
+  &[type="text"], 
+  &[type="password"], 
+  &[type="date"], 
+  &[type="datetime"], 
+  &[type="month"], 
+  &[type="week"], 
+  &[type="email"], 
+  &[type="number"], 
+  &[type="search"], 
+  &[type="tel"], 
+  &[type="time"], 
+  &[type="url"] {
+    @extend %form;
+  }
+}
+
+textarea {
+  @extend %form;
+}
+
+/**
+ * Label
+ */
+label {
+  color: $color-label;
+  cursor: pointer;
+  display: block;
+  font: {
+    size: $font-size-label;
+    weight: normal;
+  }
+  line-height: $line-height-label;
+  margin-bottom: 0;
+  margin-top: $space;
+
+  &.label-right {
+    text-align: right;
+  }
+}
+
+/**
+ * Select
+ */
+select {
+  background: {
+    color: $color-background-select;
+    repeat: no-repeat;
+  }
+  border: 1px solid $color-border-select;
+  color: $color-select;
+  display: block;
+  font-size: $font-size-select;
+  line-height: $line-height-select;
+  padding: $space;
+  width: 100%;
+
+  &:hover {
+     border-color: darken($color-border-select, 20%);
+  }
+}
+
+
+/**
+ * Checkboxes and radiobuttons
+ */
+input {
+  &[type="checkbox"], 
+  &[type="radio"] {
+    + label {
+      display: inline-block;
+      margin: 0 $space;
+      vertical-align: baseline;
+    }
+  }
+}
+
+
+/**
+ * Prefixes and postfixes
+ */
+.prefix, 
+.postfix {
+  border: {
+    style: solid;
+    width: 1px;
+  }
+  display: block;
+  font-size: $font-size-form;
+  line-height: $line-height-form;
+  overflow: hidden;
+  padding: $space;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+
+span,
+label {
+  &.postfix,
+  &.prefix {
+    background: $color-background-postprefix;
+    border-color:$color-border-postprefix;
+    color: $color-postprefix;
+  }
+
+  &.postfix {
+    border-left: none;
+  }
+  &.prefix {
+    border-right: none;
+  }
+}
+
+.row.collapse [class^="col-"] {
+  padding: 0;
+}

@@ -1,0 +1,94 @@
+/**
+ * LIST PATTERNS 
+ * -------------------------------------
+ */
+
+
+/**
+ * Lists
+ */
+ul, 
+ol, 
+ul ul,
+ol ol{
+  margin: $space;
+  padding-left: ($space );
+}
+
+ul {
+  &.disc {
+    list-style-type: disc;
+  }
+  &.square {
+    list-style-type: square;
+  }
+  &.no-style {
+    list-style-type: none;
+  }
+
+  ul {
+    list-style-type: inherit;
+  }
+}
+
+/** 
+ * Definition lists
+ */
+dl {
+  margin: 0;
+  padding: 0;
+
+  dt {
+    font-weight: bold;
+    margin-bottom: $space;
+  }
+  dd {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/**
+ * V-Cards and addresses
+ */
+.vcard, address {
+  border: 1px solid $color-gray;
+  font-style: normal;
+  display: inline-block;
+  padding: ($space);
+  margin:0;
+
+  li {
+    display: block;
+    margin: 0;
+
+    &.name {
+      font-weight: bold;
+    }
+  }
+}
+
+/**
+ * Inline lists
+ */
+
+ ul.inline {
+    list-style: none;
+    padding: $space 0;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      margin: 0 ($space);
+
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        color: $color-text-default;
+      }
+    }
+  }
