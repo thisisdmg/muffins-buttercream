@@ -2,8 +2,11 @@
 $cherry:        #ff0033;
 
 .muffins {
+  height: 220px;
+  margin: 0 auto;
+  margin-top: 9%;
   position: relative;
-  height: 300px;
+  width: 320px;
 
   .paperbag {
     position: absolute;
@@ -51,9 +54,9 @@ $cherry:        #ff0033;
   .topping {
     .bubble {      
       background: white;
+      height: 25px;
       position: absolute;
       width: 23px;
-      height: 25px;
 
 
       @include border-radius(26% 52% 44% 50%);

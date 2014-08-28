@@ -9,10 +9,13 @@ header {
 
   a {
     display: block;
+    overflow: hidden;
+    position: relative;
     text-align: center;
-      overflow: hidden;
 
     img {
+      left: 0;
+      position: absolute;
       width: 100%;
     }
   }
