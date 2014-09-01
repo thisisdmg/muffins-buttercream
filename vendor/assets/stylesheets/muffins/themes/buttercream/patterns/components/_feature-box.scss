@@ -11,11 +11,16 @@
   .highlight {
     border: 4px double $color-white;
     background: $color-brand-secondary;
-    height: 120px;
+    height: 110px;
     margin: 0 auto;
-    width: 120px;
+    text-align: center;
+    width: 110px;
 
     @include border-radius(80px);
+  }
+
+  img {
+    vertical-align: middle;
   }
 
   figcaption {

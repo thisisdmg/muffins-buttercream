@@ -5,7 +5,7 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 @import url("http://fonts.googleapis.com/css?family=Delius");
 
-$font-stack-default:    Lato, sans-serif !default;
+$font-stack-default:    "Lucida Grande", sans-serif !default;
 $font-stack-primary:    Delius, serif !default;
 
 $font-stack-headline:   $font-stack-primary;
@@ -25,36 +25,36 @@ $font-stack-menu:       $font-stack-primary;
  */
 
 //Formatting h1
-$font-size-h1:          48px !default;
-$line-height-h1:        52px !default;
+$font-size-h1:          32px !default;
+$line-height-h1:        38px !default;
 $font-color-h1:         $color-black !default;
 
 
 //Formatting h2
-$font-size-h2:          42px !default;
-$line-height-h2:        48px !default;
+$font-size-h2:          24px !default;
+$line-height-h2:        28px !default;
 $font-color-h2:         darken($color-brand-primary, 10%) !default;
 
 
 //Formatting h3
-$font-size-h3:          36px !default;
-$line-height-h3:        42px !default;
+$font-size-h3:          21px !default;
+$line-height-h3:        24px !default;
 $font-color-h3:         lighten($color-brand-primary, 5%) !default;
 
 
 //Formatting h4
-$font-size-h4:          28px !default;
-$line-height-h4:        36px !default;
+$font-size-h4:          21px !default;
+$line-height-h4:        24px !default;
 $font-color-h4:         $color-brand-primary !default;
 
 //Formatting h5
-$font-size-h5:          24px !default;
-$line-height-h5:        28px !default;
+$font-size-h5:          18px !default;
+$line-height-h5:        21px !default;
 $font-color-h5:         $color-brand-primary !default;
 
 //Formatting h6
-$font-size-h6:          18px !default;
-$line-height-h6:        24px !default;
+$font-size-h6:          16px !default;
+$line-height-h6:        21px !default;
 $font-color-h6:         $color-brand-primary !default;
 
 
@@ -63,8 +63,8 @@ $font-color-h6:         $color-brand-primary !default;
  */
 
 //Formatting p
-$font-size-default:          18px !default;
-$line-height-default:        24px !default;
+$font-size-default:          16px !default;
+$line-height-default:        21px !default;
 $font-color-default:         $color-black !default;
 
 //Formmatin small text
