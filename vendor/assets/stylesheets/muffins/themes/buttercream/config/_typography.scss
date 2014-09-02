@@ -6,7 +6,7 @@
 @import url("http://fonts.googleapis.com/css?family=Delius");
 
 $font-stack-default:    "Lucida Grande", sans-serif !default;
-$font-stack-primary:    Delius, serif !default;
+$font-stack-primary:    'Coming Soon', cursive !default;
 
 $font-stack-headline:   $font-stack-primary;
 $font-stack-menu:       $font-stack-primary;
@@ -43,7 +43,7 @@ $font-color-h3:         lighten($color-brand-primary, 5%) !default;
 
 
 //Formatting h4
-$font-size-h4:          21px !default;
+$font-size-h4:          18px !default;
 $line-height-h4:        24px !default;
 $font-color-h4:         $color-brand-primary !default;
 
