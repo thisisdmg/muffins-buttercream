@@ -15,7 +15,7 @@
  
 //generate headlines
 @include generate-headlines('h1', $font-color-h1, $font-size-h1, $line-height-h1 );
-@include generate-headlines('h2', $font-color-h2, $font-size-h2, $line-height-h2 );
+@include generate-headlines('h2', $color-white, $font-size-h2, $line-height-h2 );
 @include generate-headlines('h3', $font-color-h3, $font-size-h3, $line-height-h3 );
 @include generate-headlines('h4', $font-color-h4, $font-size-h4, $line-height-h4 );
 @include generate-headlines('h5', $font-color-h5, $font-size-h5, $line-height-h5 );
@@ -25,6 +25,11 @@
 h1 {
   margin: 0;
 }
+h2 {
+  text-shadow:  1px 1px 2px $font-color-h2,
+                1px -1px 2px $font-color-h2,
+                -1px 1px 2px $font-color-h2,
+                -1px -1px 2px $font-color-h2;
 /**
  * default text
  */

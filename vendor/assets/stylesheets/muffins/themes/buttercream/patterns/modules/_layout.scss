@@ -15,3 +15,17 @@ body{
   }
 
 }
+.main {
+  border-left: 1px solid $color-brand-secondary;
+  padding-left: ($space * 2);
+}
+
+
+.topbar {
+  li {
+    &.active {
+      background-color: rgba(169, 219, 206, 0.3);
+      padding: $space;
+    }
+  }
+}
