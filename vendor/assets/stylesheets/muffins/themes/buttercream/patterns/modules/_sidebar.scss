@@ -3,9 +3,11 @@ sidebar {
   &.navigation {
     height: 100%;
     
+    > ul {
+      border-bottom: 4px double $color-brand-primary;
+    }
     ul {
       background-color: $color-transparent;
-      border-bottom: 4px double $color-brand-primary;
       height: 100%;
       list-style: none;
       margin: 0;
@@ -13,15 +15,18 @@ sidebar {
       padding: 0;
 
       li {
-        padding: $space ($space * 2);
+        padding: $space ($space * 3);
 
         &:before {
-          content: "";
+          color: $color-brand-primary;
+          content: "➜";
+          font-size: 14px;
+          margin-left: -16px;
         }
         &.active{
           background-color: rgba(253, 114, 115, 0.2);
       
-          @include border-radius(($space / 2));
+          @include border-radius(($space / 3));
 
           + ul {
             display: inherit;
@@ -29,6 +34,7 @@ sidebar {
         }
         a {
           display: inline-block;
+          padding-left: $space;
           width: 100%;
         }       
       } 
