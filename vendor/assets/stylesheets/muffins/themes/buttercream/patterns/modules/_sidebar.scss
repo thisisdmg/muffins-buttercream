@@ -1,0 +1,48 @@
+
+sidebar {
+  &.navigation {
+    ul {
+      background-color: rgba(253, 114, 115, 0.2);
+      list-style: none;
+      margin: 0;
+      margin-bottom: $space;
+      padding: 0;
+
+      @include border-radius(($space / 2));
+
+      li {
+        padding: $space ($space * 2);
+
+        &:before {
+          content: "";
+        }
+
+        &.active{
+          background-color: rgba(253, 114, 115, 0.2);
+      
+          @include border-radius(($space / 2));
+
+          + ul {
+            display: inherit;
+          }
+
+        }
+
+        a {
+          display: inline-block;
+          width: 100%;
+        }       
+      } 
+      ul {
+        background-color: $color-transparent;
+        display: none;
+      
+        @include border-radius(0);
+
+        li {
+          padding-left: ($space * 4);
+        }
+      }
+    }
+  }
+}
