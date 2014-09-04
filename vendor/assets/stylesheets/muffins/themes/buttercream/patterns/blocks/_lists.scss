@@ -11,7 +11,7 @@ ul,
 ol, 
 ul ul,
 ol ol{
-  margin: $space;
+  margin: ($space * 2);
   padding-left: ($space );
 }
 
