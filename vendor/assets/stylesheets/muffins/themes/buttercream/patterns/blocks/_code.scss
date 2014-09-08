@@ -10,8 +10,8 @@ pre {
 }
 
 code { 
-  background-color: $background-code;
-  border: 1px solid darken($background-code, 10%);
+  background-color: $color-background-code;
+  border: 1px solid darken($color-background-code, 10%);
   display: block;
   margin: 0;
 
@@ -26,9 +26,8 @@ code {
   }
 
   header {
-    background-color: lighten($background-code, 5%);
-    border-bottom: 1px solid darken($background-code, 10%);
     font: {
+      color: $color-code-headline;
       weight: bold;
       size: 110%;
     }
