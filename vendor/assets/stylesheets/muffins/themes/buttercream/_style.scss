@@ -21,6 +21,7 @@
 @import "config/code";
 @import "config/callouts-prompts";
 @import "config/forms";
+@import "config/tab-menu";
 
 // IMPORT MIXINS FILES (THESE CONTAIN HELPER FUNCTIONS)
 @import "mixins/buttons";
@@ -40,6 +41,7 @@
   // COMPONENT FILES
   @import "patterns/components/callouts-prompts";
   @import "patterns/components/feature-box";
+  @import "patterns/components/tab-menu";
 
   //MODULE FILES
   @import "patterns/modules/layout";
