@@ -20,12 +20,13 @@ body{
   padding-left: ($space * 2);
   
   section {
-    border-bottom: 4px solid $color-brand-secondary;
+    border-bottom: 4px double $color-brand-secondary;
     padding-bottom: ($space + 2);
     margin-bottom: ($space * 2);
 
     section {
       border: none;
+      padding: 0;
     }
   }
 }
