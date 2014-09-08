@@ -32,4 +32,5 @@ body{
 
 section {
   margin-bottom: ($space * 4);
+  border-bottom: 4px double $color-brand-secondary;
 }
