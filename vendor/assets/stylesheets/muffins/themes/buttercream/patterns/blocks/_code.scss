@@ -25,20 +25,21 @@ code {
     padding: ($space / 2) $space;
   }
 
+  header, p {
+    font-size: $font-size-code;
+    line-height: $line-height-code;
+    overflow-x: auto;
+    padding:  $space;
+  }
+  
   header {
+    border: none;
     font: {
       color: $color-code-headline;
       weight: bold;
       size: 110%;
     }
     text-transform: italic;
-  }
-
-  header, p {
-    font-size: $font-size-code;
-    line-height: $line-height-code;
-    overflow-x: auto;
-    padding:  $space;
   }
 }
 
