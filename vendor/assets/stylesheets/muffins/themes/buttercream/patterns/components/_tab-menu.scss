@@ -1,6 +1,6 @@
 
 
-.rtab-menu {
+.tab-menu {
   .state {
     position: absolute;
     left: -10000px;
@@ -11,7 +11,7 @@
       box-shadow: 0 0 3px 3px rgba(0,127,255,.5);
   }
 
-  .rtab-menu .tab {
+  .tab-menu .tab {
       display: inline-block;
       padding: .5em;
       vertical-align: top;
@@ -19,7 +19,7 @@
       cursor: hand;
       cursor: pointer;
   }
-  .rtab-menu .tab:hover {
+  .tab-menu .tab:hover {
       background-color: #fff;
   }
   #tab1:checked ~ .tabs #tab1-tab,
@@ -29,11 +29,11 @@
       cursor: default;
   }
 
-  .rtab-menu .panels {
+  .tab-menu .panels {
       background-color: #fff;
       padding: .5em;
   }
-  .rtab-menu .panel {
+  .tab-menu .panel {
       display: none;
   }
   #tab1:checked ~ .panels #tab1-panel,
