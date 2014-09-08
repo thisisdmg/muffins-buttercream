@@ -1,45 +1,42 @@
-
-
+/**
+ * tab menu patterns 
+ */
+ 
 .tab-menu {
   .state {
     position: absolute;
     left: -10000px;
   }
 
-  #tab1:focus ~ .tabs #tab1-tab,
-  #tab2:focus ~ .tabs #tab2-tab{
-      box-shadow: 0 0 3px 3px rgba(0,127,255,.5);
+  .tab {
+    border: 1px solid $color-border-tab-menu;
+    cursor: hand;
+    cursor: pointer;
+    display: inline-block;
+    padding: $space;
+    margin-right: $space;
+    vertical-align: top;
+
+    @include border-radius($border-radius-tab-menu);
+      
+      &:hover {
+        background-color: $color-brand-primary;
+      }
   }
 
-  .tab-menu .tab {
-      display: inline-block;
-      padding: .5em;
-      vertical-align: top;
-      background-color: #eee;
-      cursor: hand;
-      cursor: pointer;
-  }
-  .tab-menu .tab:hover {
-      background-color: #fff;
-  }
-  #tab1:checked ~ .tabs #tab1-tab,
-  #tab2:checked ~ .tabs #tab2-tab {
-      background-color: #fff;
-      border-bottom: .3em solid #fff;
-      cursor: default;
-  }
-
-  .tab-menu .panels {
-      background-color: #fff;
-      padding: .5em;
-  }
-  .tab-menu .panel {
+  #usage:checked ~ .tabs #tab1-tab,
+  #display:checked ~ .tabs  #tab2-tab{
+    background-color: $color-brand-secondary;
+  } 
+  .panel {
       display: none;
   }
-  #tab1:checked ~ .panels #tab1-panel,
-  #tab2:checked ~ .panels #tab2-panel {
+
+  #usage:checked ~ .panels #tab1-panel,
+  #display:checked ~ .panels #tab2-panel {
       display: block;
   }
+}
 
 
 
