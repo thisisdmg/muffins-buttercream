@@ -18,6 +18,10 @@ body{
 .main {
   border-left: 1px solid $color-brand-secondary;
   padding-left: ($space * 2);
+  
+  section {
+    margin-bottom: ($space * 4);
+  }
 }
 
 
@@ -28,8 +32,4 @@ body{
       padding: $space;
     }
   }
-}
-
-section {
-  margin-bottom: ($space * 4);
 }
