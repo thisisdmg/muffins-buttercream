@@ -20,7 +20,13 @@ body{
   padding-left: ($space * 2);
   
   section {
-    margin-bottom: ($space * 4);
+    border-bottom: 4px solid $color-brand-secondary;
+    padding-bottom: ($space + 2);
+    margin-bottom: ($space * 2);
+
+    section {
+      border: none;
+    }
   }
 }
 
