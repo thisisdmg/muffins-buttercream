@@ -21,8 +21,8 @@ body{
   
   section {
     border-bottom: 4px double $color-brand-secondary;
-    padding-bottom: ($space + 2);
-    margin-bottom: ($space * 2);
+    padding-bottom: ($space);
+    margin-bottom: ($space * 3);
 
     section {
       border: none;

@@ -1,0 +1,61 @@
+
+
+.rtab-menu {
+  .state {
+    position: absolute;
+    left: -10000px;
+  }
+
+  #tab1:focus ~ .tabs #tab1-tab,
+  #tab2:focus ~ .tabs #tab2-tab{
+      box-shadow: 0 0 3px 3px rgba(0,127,255,.5);
+  }
+
+  .rtab-menu .tab {
+      display: inline-block;
+      padding: .5em;
+      vertical-align: top;
+      background-color: #eee;
+      cursor: hand;
+      cursor: pointer;
+  }
+  .rtab-menu .tab:hover {
+      background-color: #fff;
+  }
+  #tab1:checked ~ .tabs #tab1-tab,
+  #tab2:checked ~ .tabs #tab2-tab {
+      background-color: #fff;
+      border-bottom: .3em solid #fff;
+      cursor: default;
+  }
+
+  .rtab-menu .panels {
+      background-color: #fff;
+      padding: .5em;
+  }
+  .rtab-menu .panel {
+      display: none;
+  }
+  #tab1:checked ~ .panels #tab1-panel,
+  #tab2:checked ~ .panels #tab2-panel {
+      display: block;
+  }
+
+
+
+
+
+
+
+/* Android 2.3 fix */
+@keyframes fake {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 1
+    }
+}
+body {        
+    animation: fake 1s infinite;
+}
