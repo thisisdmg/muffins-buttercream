@@ -31,15 +31,14 @@ code {
     overflow-x: auto;
     padding:  $space;
   }
-  
+
   header {
     border: none;
+    color: $color-code-headline;
     font: {
-      color: $color-code-headline;
       weight: bold;
       size: 110%;
     }
-    text-transform: italic;
   }
 }
 
