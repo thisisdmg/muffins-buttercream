@@ -23,18 +23,19 @@
         background-color: $color-brand-primary;
       }
   }
-
-  #usage:checked ~ .tabs #tab1-tab,
-  #display:checked ~ .tabs  #tab2-tab{
-    background-color: $color-brand-secondary;
-  } 
   .panel {
       display: none;
   }
 
-  #usage:checked ~ .panels #tab1-panel,
-  #display:checked ~ .panels #tab2-panel {
-      display: block;
+  @for $i from 1 to $count-tab-menu {
+
+    input[id *= "tab#{$i}"]:checked ~ .tabs .tab#{$i}.tab{
+      background-color: $color-brand-secondary;
+    } 
+
+    input[id *= "tab#{$i}"]:checked ~ .panels .panel:nth-child(#{$i}) {
+        display: block;
+    }
   }
 }
 
