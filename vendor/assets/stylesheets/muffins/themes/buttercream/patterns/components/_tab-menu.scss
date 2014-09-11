@@ -25,6 +25,7 @@
   }
   .panel {
       display: none;
+      margin: $space 0:
   }
 
   @for $i from 1 to $count-tab-menu {
