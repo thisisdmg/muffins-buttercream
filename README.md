@@ -11,7 +11,7 @@ Adds the Muffin Buttercream Theme to a Rails Application.
 
 Add this line to your application's Gemfile:
 
-    gem 'muffins-buttercream', git: 'ssh://git@git.thisisdmg.com:2222/interne-projekte/muffins-buttercream.git'
+    gem 'muffins-buttercream', github: 'thisisdmg/muffins-buttercream'
 
 execute:
 
